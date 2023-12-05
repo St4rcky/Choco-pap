@@ -1,6 +1,7 @@
 import "./Css/App.css";
 import Boutique from "./Pages/Boutique";
 import Menu from "./Composants/Menu";
+import Footer from "./Composants/Footer";
 import Accueil from "./Pages/Accueil";
 import { Routes, Route } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
@@ -13,6 +14,7 @@ function App() {
         <Route path="/" element={<Accueil />} />
         <Route path="/shop" element={<Boutique />} />
       </Routes>
+      <Footer />
     </>
   );
 }
