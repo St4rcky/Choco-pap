@@ -1,6 +1,9 @@
+.header {
+  background-color: rgb(84, 192, 207);
+}
 .menu {
   padding: 0 !important;
-  margin: 0 5% 0 5% !important;
+  margin: 10px 5% 10px 5% !important;
 }
 @media screen and (min-width: 576px) {
   .menu {
@@ -20,14 +23,13 @@
   }
 }
 .logo {
-  width: 60px;
+  width: 40px;
   padding-top: 0px;
-  padding-left: 20px;
-  /* position: absolute; */
+  padding-left: 0px;
 }
 
 .panier {
-  width: 30px;
+  width: 20px;
   cursor: pointer;
 }
 li {
@@ -41,11 +43,17 @@ a {
   font-weight: bold;
   color: #07c5fa;
 }
-.lienMenu {
+.test {
   margin-bottom: 10px;
+  color: black;
+  text-decoration: underline;
 }
 @media screen and (min-width: 576px) {
-  .lienMenu {
+  .test {
     padding: 0 20px 0 0;
   }
+}
+.testpanier {
+  display: flex;
+  flex-direction: row;
 }

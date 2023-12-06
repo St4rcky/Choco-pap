@@ -1,0 +1,27 @@
+.ouvrirFermer {
+  cursor: pointer;
+}
+.show-categorie {
+  display: block;
+}
+
+.hide-categorie {
+  display: none;
+}
+.boutique {
+  margin: 20px auto 40px;
+  transform: translateX(20%);
+  font-size: 3em;
+}
+.titreFiltre {
+  padding: 10px 0;
+}
+.filtreTexte {
+  text-decoration: underline;
+  padding: 10px 0;
+}
+button {
+  border: 3px solid black;
+  box-shadow: 3px 3px 1px black;
+  background-color: white;
+}

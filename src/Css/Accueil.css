@@ -58,3 +58,10 @@
   text-decoration: none;
   color: black;
 }
+h1,
+h2,
+h3,
+h4 {
+  font-family: "Montserrat", sans-serif;
+  font-family: "Open Sans", sans-serif;
+}

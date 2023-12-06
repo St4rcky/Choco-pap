@@ -6,7 +6,7 @@ import Navbar from "react-bootstrap/Navbar";
 export default function Menu() {
   return (
     <>
-      <Navbar expand="sm">
+      <Navbar className="header" expand="sm">
         <Container className="menu">
           <div>
             <Navbar.Brand>
@@ -17,16 +17,15 @@ export default function Menu() {
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="me-auto">
-              <NavLink to="" className="lienMenu">
+              <NavLink to="" className="test">
                 Accueil
               </NavLink>
-              <NavLink to="/shop" className="lienMenu">
+              <NavLink to="/shop" className="test">
                 Boutique
               </NavLink>
 
               <p>
-                <span className="visible">Panier </span>
-
+                <span className="visible test">Panier </span>{" "}
                 <img
                   className="panier"
                   src="/images/chariot.png"

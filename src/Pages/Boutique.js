@@ -6,7 +6,7 @@ import { produits } from "../Composants/ListProduits";
 import Produit from "../Composants/Produit";
 
 export default function Boutique() {
-  // États initiaux des filtres
+  // États initiaux de mes filtres
   const [isMenuOpen, setMenuOpen] = useState(false);
 
   const categorieMenuClasses = isMenuOpen ? "show-categorie" : "hide-categorie";
@@ -71,13 +71,13 @@ export default function Boutique() {
       } else {
         // Sinon, sélectionne "tous" et désélectionne les autres catégories
         setSelectedCategories(["tous"]);
-        // Désélectionne les autres catégories
+        // Désélectionne explicitement les autres catégories
         categories.forEach((cat) => {
           document.getElementById(cat).checked = false;
         });
       }
     } else {
-      // Si une autre catégorie est sélectionnée
+      // Si une autre catégorie est sélectionnée, ajuste la logique existante
       if (selectedCategories.includes("tous")) {
         setSelectedCategories([category]);
         // Désélectionne explicitement "tous"
@@ -108,10 +108,12 @@ export default function Boutique() {
 
   return (
     <Container fluid>
+      <h1 className="boutique">BOUTIQUE</h1>
       <Row>
         <Col xs={12} sm={6} md={4} lg={3}>
           <section>
-            <h3>
+            <h2 className="titreFiltre">FILTRE</h2>
+            <h3 className="filtreTexte">
               Catégorie{" "}
               <span
                 className="ouvrirFermer"
@@ -127,7 +129,7 @@ export default function Boutique() {
                 id="tous"
                 name="tous"
                 checked={selectedCategories.includes("tous")}
-              />
+              />{" "}
               <label htmlFor="tous">Tous</label>
               <br />
               {categories.map((categorie) => (
@@ -136,13 +138,13 @@ export default function Boutique() {
                     onChange={(e) => handleCheckboxChange(e)}
                     type="checkbox"
                     id={categorie}
-                  />
+                  />{" "}
                   <label htmlFor={categorie}>{categorie}</label>
                   <br />
                 </div>
               ))}
             </form>
-            <h3>Prix</h3>
+            <h3 className="filtreTexte">Prix</h3>
             <label htmlFor="prixMin">Prix min</label>
             <input
               onChange={(e) => setMinPrix(Number(e.target.value))}
@@ -164,7 +166,7 @@ export default function Boutique() {
               max="100"
               placeholder="100€"
             />
-            <h3>Notes</h3>
+            <h3 className="filtreTexte">Notes</h3>
             <label htmlFor="noteMin">Note min</label>
             <select
               onChange={(e) => setMinRating(Number(e.target.value))}
