@@ -6,7 +6,7 @@ import { produits } from "../Composants/ListProduits";
 import Produit from "../Composants/Produit";
 
 export default function Boutique() {
-  // États initiaux de mes filtres
+  // États initiaux des filtres
   const [isMenuOpen, setMenuOpen] = useState(false);
 
   const categorieMenuClasses = isMenuOpen ? "show-categorie" : "hide-categorie";
@@ -71,13 +71,13 @@ export default function Boutique() {
       } else {
         // Sinon, sélectionne "tous" et désélectionne les autres catégories
         setSelectedCategories(["tous"]);
-        // Désélectionne explicitement les autres catégories
+        // Désélectionne les autres catégories
         categories.forEach((cat) => {
           document.getElementById(cat).checked = false;
         });
       }
     } else {
-      // Si une autre catégorie est sélectionnée, ajuste la logique existante
+      // Si une autre catégorie est sélectionnée
       if (selectedCategories.includes("tous")) {
         setSelectedCategories([category]);
         // Désélectionne explicitement "tous"

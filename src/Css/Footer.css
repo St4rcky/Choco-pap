@@ -1,0 +1,45 @@
+.footer {
+  background-color: #b65f28;
+  color: #1f1615;
+  display: grid;
+  grid-template-columns: 1fr 1.5fr 1fr;
+}
+.footer h2 {
+  font-weight: bold;
+  margin-bottom: 1em;
+}
+.info {
+  margin: 20px;
+}
+.info p {
+  margin: 0;
+  font-size: 0.8em;
+  font-weight: bold;
+}
+.logoReseaux {
+  display: flex;
+  align-items: center;
+}
+.logoReseaux img {
+  padding: 20px;
+  transform: translateY(-20px);
+}
+@media screen and (max-width: 700px) {
+  .footer {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media screen and (max-width: 550px) {
+  .footer {
+    grid-template-columns: 1fr;
+    p {
+      width: 60%;
+    }
+  }
+  .info {
+    margin-bottom: 0px;
+  }
+  .logoReseaux {
+    margin-top: 30px;
+  }
+}
