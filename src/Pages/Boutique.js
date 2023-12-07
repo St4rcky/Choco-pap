@@ -7,9 +7,13 @@ import Produit from "../Composants/Produit";
 
 export default function Boutique() {
   // États initiaux de mes filtres
-  const [isMenuOpen, setMenuOpen] = useState(false);
+  const [isCategorieOpen, setIsCategorieOpen] = useState(false);
+  const [isPrixOpen, setIsPrixOpen] = useState(false);
+  const [isNotesOpen, setIsNotesOpen] = useState(false);
 
-  const categorieMenuClasses = isMenuOpen ? "show-categorie" : "hide-categorie";
+  const categorieMenu = isCategorieOpen ? "show-categorie" : "hide-categorie";
+  const prixMenu = isPrixOpen ? "show-categorie" : "hide-categorie";
+  const notesMenu = isNotesOpen ? "show-categorie" : "hide-categorie";
 
   const [minPrix, setMinPrix] = useState(0);
   const [maxPrix, setMaxPrix] = useState(Infinity);
@@ -114,15 +118,15 @@ export default function Boutique() {
           <section>
             <h2 className="titreFiltre">FILTRE</h2>
             <h3 className="filtreTexte">
-              Catégorie{" "}
+              Catégories{" "}
               <span
                 className="ouvrirFermer"
-                onClick={() => setMenuOpen(!isMenuOpen)}
+                onClick={() => setIsCategorieOpen(!isCategorieOpen)}
               >
-                {isMenuOpen ? "-" : "+"}
+                {isCategorieOpen ? "-" : "+"}
               </span>
             </h3>
-            <form className={categorieMenuClasses}>
+            <form className={`siOuvert ${categorieMenu}`}>
               <input
                 onChange={(e) => handleCheckboxChange(e)}
                 type="checkbox"
@@ -143,54 +147,77 @@ export default function Boutique() {
                   <br />
                 </div>
               ))}
+              <br />
             </form>
-            <h3 className="filtreTexte">Prix</h3>
-            <label htmlFor="prixMin">Prix min</label>
-            <input
-              onChange={(e) => setMinPrix(Number(e.target.value))}
-              type="number"
-              id="prixMin"
-              name="prixMin"
-              min="1"
-              max="100"
-              placeholder="1€"
-            />
-            <br />
-            <label htmlFor="prixMax">Prix max</label>
-            <input
-              onChange={(e) => setMaxPrix(Number(e.target.value))}
-              type="number"
-              id="prixMax"
-              name="prixMax"
-              min="1"
-              max="100"
-              placeholder="100€"
-            />
-            <h3 className="filtreTexte">Notes</h3>
-            <label htmlFor="noteMin">Note min</label>
-            <select
-              onChange={(e) => setMinRating(Number(e.target.value))}
-              id="noteMin"
-            >
-              <option defaultValue="1">1</option>
-              <option value="2">2</option>
-              <option value="3">3</option>
-              <option value="4">4</option>
-              <option value="5">5</option>
-            </select>
-            <br />
-            <label htmlFor="noteMax">Note max</label>
-            <select
-              onChange={(e) => setMaxRating(Number(e.target.value))}
-              defaultValue="5"
-              id="noteMax"
-            >
-              <option value="1">1</option>
-              <option value="2">2</option>
-              <option value="3">3</option>
-              <option value="4">4</option>
-              <option defaultValue="5">5</option>
-            </select>
+            <h3 className="filtreTexte">
+              Prix{" "}
+              <span
+                className="ouvrirFermer"
+                onClick={() => setIsPrixOpen(!isPrixOpen)}
+              >
+                {isPrixOpen ? "-" : "+"}
+              </span>
+            </h3>
+            <form className={`siOuvert ${prixMenu}`}>
+              <label htmlFor="prixMin">Prix min</label>
+              <input
+                onChange={(e) => setMinPrix(Number(e.target.value))}
+                type="number"
+                id="prixMin"
+                name="prixMin"
+                min="1"
+                max="100"
+                placeholder="1€"
+              />
+              <br />
+              <label htmlFor="prixMax">Prix max</label>
+              <input
+                onChange={(e) => setMaxPrix(Number(e.target.value))}
+                type="number"
+                id="prixMax"
+                name="prixMax"
+                min="1"
+                max="100"
+                placeholder="100€"
+              />
+              <br />
+            </form>
+            <h3 className="filtreTexte">
+              Notes{" "}
+              <span
+                className="ouvrirFermer"
+                onClick={() => setIsNotesOpen(!isNotesOpen)}
+              >
+                {isNotesOpen ? "-" : "+"}
+              </span>
+            </h3>
+            <form className={`siOuvert ${notesMenu}`}>
+              <label htmlFor="noteMin">Note min</label>{" "}
+              <select
+                onChange={(e) => setMinRating(Number(e.target.value))}
+                id="noteMin"
+              >
+                <option defaultValue="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+              </select>
+              <br />
+              <label htmlFor="noteMax">Note max </label>{" "}
+              <select
+                onChange={(e) => setMaxRating(Number(e.target.value))}
+                defaultValue="5"
+                id="noteMax"
+              >
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option defaultValue="5">5</option>
+              </select>
+              <br />
+            </form>
           </section>
         </Col>
         <Col>

@@ -3,6 +3,7 @@
   color: #1f1615;
   display: grid;
   grid-template-columns: 1fr 1.5fr 1fr;
+  margin-top: 40px;
 }
 .footer h2 {
   font-weight: bold;

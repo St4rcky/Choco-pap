@@ -1,8 +1,16 @@
 .produit {
-  max-width: 100%;
+  max-width: 60%;
   height: auto;
-  margin: 10px;
+  margin: 50px auto 10px;
+  display: block;
 }
 .descProduit {
   text-align: center;
+  margin: 0;
+}
+.descProduit h4,
+.descProduit p,
+.descProduit button {
+  margin: 0;
+  font-weight: 600;
 }

@@ -4,3 +4,6 @@ img {
 #quantity {
   width: 75px;
 }
+input[type="number"] {
+  text-align: right;
+}

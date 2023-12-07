@@ -4,7 +4,6 @@
 .show-categorie {
   display: block;
 }
-
 .hide-categorie {
   display: none;
 }
@@ -24,4 +23,7 @@ button {
   border: 3px solid black;
   box-shadow: 3px 3px 1px black;
   background-color: white;
+}
+.siOuvert :last-child {
+  padding-bottom: 20px;
 }
