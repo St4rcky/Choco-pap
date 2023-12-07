@@ -10,9 +10,9 @@ export default function Footer() {
       </div>
       <div className="info">
         <h2>Contact</h2>
-        <p>Adresse : 51 rue du chocolat 75000 Paris</p>
+        <p className="inline">Adresse : 51 rue du chocolat 75000 Paris</p>
         <p>Téléphone : 01 23 45 67 89</p>
-        <p>Horaires : 9h00-17h00 du Lundi au Vendredi</p>
+        <p className="inline">Horaires : 9h00-17h00 du Lundi au Vendredi</p>
       </div>
       <div className="logoReseaux">
         <img src="/images/facebook.png" alt="Logo Facebook"></img>
