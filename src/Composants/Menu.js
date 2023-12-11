@@ -4,6 +4,7 @@ import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import { useState } from "react";
 import Offcanvas from "react-bootstrap/Offcanvas";
+import CloseButton from "react-bootstrap/esm/CloseButton";
 import Panier from "./Panier";
 import { PanierContext } from "./PanierContext";
 import { useContext } from "react";
@@ -77,8 +78,11 @@ export default function Menu() {
         placement={"end"}
         className="offcanvas-custom-width"
       >
-        <Offcanvas.Header closeButton>
-          <Offcanvas.Title>PANIER</Offcanvas.Title>
+        <Offcanvas.Header className="offcanvasHeader">
+          <button onClick={handleClose} className="offcanvasCloseButton">
+            &times;
+          </button>
+          <Offcanvas.Title className="offcanvasTitre">PANIER</Offcanvas.Title>
         </Offcanvas.Header>
         <Offcanvas.Body>
           {itemPanier.map((produit) => (
@@ -90,7 +94,7 @@ export default function Menu() {
           ))}
           <p>TOTAL : {prixTotal} €</p>
           <button onClick={handleResetPanier}>REINITIALISER LE PANIER</button>
-          <button>VALIDER LE PANIER</button>
+          <button className="shadow">VALIDER LE PANIER</button>
         </Offcanvas.Body>
       </Offcanvas>
     </>

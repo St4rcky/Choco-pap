@@ -7,3 +7,46 @@ img {
 input[type="number"] {
   text-align: right;
 }
+.img-xl {
+  display: none;
+}
+.titreDesc {
+  padding: 35px 0 0 10px;
+  text-transform: uppercase;
+}
+.prixDesc {
+  font-weight: 600;
+  font-size: 2em;
+  padding-left: 10px;
+}
+.textDesc {
+  font-weight: 600;
+}
+#quantity {
+  width: 65px;
+  font-weight: 600;
+  margin: 10px 0 20px 5px;
+  border: black solid 2px;
+}
+.boutonDesc {
+  width: 80%;
+  margin-left: 5px;
+  box-shadow: 5px 5px #2c1e1e;
+}
+.img-xs {
+  padding-top: 30px;
+}
+.ingredient {
+  padding: 20px 0 0 5px;
+}
+.textIngredient {
+  padding-top: 30px;
+}
+@media screen and (min-width: 767px) {
+  .img-xl {
+    display: block;
+  }
+  .img-xs {
+    display: none;
+  }
+}

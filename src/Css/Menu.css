@@ -5,23 +5,7 @@
   padding: 0 !important;
   margin: 10px 5% 10px 5% !important;
 }
-@media screen and (min-width: 576px) {
-  .menu {
-    font-size: 1.2em;
-  }
-  .navbar-collapse {
-    flex-grow: 0 !important;
-  }
-  .navbar-nav {
-    margin-left: auto !important;
-  }
-  .me-auto {
-    margin-right: auto !important;
-  }
-  .visible {
-    display: none;
-  }
-}
+
 .logo {
   width: 40px;
   padding-top: 0px;
@@ -48,12 +32,56 @@ a {
   color: black;
   text-decoration: underline;
 }
+
+.testpanier {
+  display: flex;
+  flex-direction: row;
+}
+.offcanvas-custom-width {
+  width: 100% !important;
+}
+.offcanvasHeader {
+  display: flex;
+  flex-direction: column;
+}
+
+.offcanvasHeader .offcanvasCloseButton {
+  align-self: flex-start;
+  margin: 0;
+  background-color: white;
+  font-size: 2em;
+  font-weight: bold;
+  border: solid 2px black;
+  border-radius: 10%;
+  line-height: 1em;
+}
+.offcanvasHeader .offcanvasTitre {
+  text-align: center;
+}
+@media screen and (min-width: 576px) {
+  .menu {
+    font-size: 1.2em;
+  }
+  .navbar-collapse {
+    flex-grow: 0 !important;
+  }
+  .navbar-nav {
+    margin-left: auto !important;
+  }
+  .me-auto {
+    margin-right: auto !important;
+  }
+  .visible {
+    display: none;
+  }
+}
 @media screen and (min-width: 576px) {
   .test {
     padding: 0 20px 0 0;
   }
 }
-.testpanier {
-  display: flex;
-  flex-direction: row;
+@media screen and (min-width: 767px) {
+  .offcanvas-custom-width {
+    width: 50% !important;
+  }
 }

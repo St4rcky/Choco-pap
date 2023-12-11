@@ -51,12 +51,16 @@ export default function Description() {
     <Container>
       <Row>
         <Col xs={12} md={6} lg={{ span: 3, offset: 1 }}>
-          <img src={produit.produitImage} alt={produit.produitNom} />
+          <img
+            className="img-xl"
+            src={produit.produitImage}
+            alt={produit.produitNom}
+          />
         </Col>
         <Col xs={12} md={6} lg={{ span: 4, offset: 2 }}>
-          <h1>{produit.produitNom}</h1>
-          <p>{produit.prix} €</p>
-          <p>
+          <h1 className="titreDesc">{produit.produitNom}</h1>
+          <p className="prixDesc">{produit.prix} €</p>
+          <p className="textDesc">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse
             architecto, provident odit corporis earum quia fugiat quibusdam
             alias non possimus illum ducimus! Odio commodi laboriosam eum,
@@ -74,14 +78,21 @@ export default function Description() {
               />
             </Col>
             <Col md={8}>
-              <button onClick={handleAjouterAuPanier}>AJOUTER AU PANIER</button>
+              <button className="boutonDesc" onClick={handleAjouterAuPanier}>
+                AJOUTER AU PANIER
+              </button>
             </Col>
           </Row>
         </Col>
+        <img
+          className="img-xs"
+          src={produit.produitImage}
+          alt={produit.produitNom}
+        />
       </Row>
-      <div className="ingredients-section">
-        <h2>Ingrédients</h2>
-        <p className="last-paragraph">
+      <div>
+        <h2 className="ingredient">Ingrédients</h2>
+        <p className="textDesc textIngredient">
           Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quas
           temporibus suscipit corrupti possimus a ex illo dignissimos vero rerum
           velit, distinctio repellat voluptatum assumenda ut qui, dolorum

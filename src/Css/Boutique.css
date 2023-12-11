@@ -19,9 +19,9 @@
   text-decoration: underline;
   padding: 10px 0;
 }
-button {
+.shadow {
   border: 3px solid black;
-  box-shadow: 3px 3px 1px black;
+  box-shadow: 3px 3px 3px rgb(0, 0, 0);
   background-color: white;
 }
 .siOuvert :last-child {
