@@ -80,7 +80,7 @@ export default function Menu() {
       >
         <Offcanvas.Header className="offcanvasHeader">
           <button onClick={handleClose} className="offcanvasCloseButton">
-            &times;
+            &#10006;
           </button>
           <Offcanvas.Title className="offcanvasTitre">PANIER</Offcanvas.Title>
         </Offcanvas.Header>

@@ -45,15 +45,18 @@ a {
   flex-direction: column;
 }
 
-.offcanvasHeader .offcanvasCloseButton {
-  align-self: flex-start;
+.offcanvasCloseButton {
+  padding: 0;
   margin: 0;
+  align-self: flex-start;
   background-color: white;
   font-size: 2em;
   font-weight: bold;
   border: solid 2px black;
   border-radius: 10%;
-  line-height: 1em;
+  font-family: initial !important;
+  line-height: 0.85 !important;
+  padding: 3px;
 }
 .offcanvasHeader .offcanvasTitre {
   text-align: center;
