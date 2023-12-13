@@ -1,13 +1,21 @@
+.p,
+h1,
+h2,
+h3,
+h4 {
+  color: #2c1e1e !important;
+}
 .img-accueil {
   position: relative;
   text-align: center;
   /* overflow: hidden; */
   height: 80%;
   /* width: 80%; */
-  margin: 5px auto;
+  margin: 0px auto;
+  border: solid 3px #2c1e1e;
 }
 .accueil {
-  width: 90%;
+  width: 100%;
   max-height: 800px;
   object-fit: cover;
 }
@@ -16,7 +24,7 @@
   top: 20%;
   left: 50%;
   transform: translate(-50%, -50%);
-  color: brown;
+  color: #ffd543 !important;
   font-size: 2em;
 }
 .carousel-indicators button {
@@ -33,6 +41,9 @@
 @media screen and (min-width: 576px) {
   .choco {
     font-size: 3em;
+  }
+  .boutonText {
+    text-transform: uppercase;
   }
 }
 @media screen and (min-width: 768px) {
@@ -52,11 +63,13 @@
   transform: translate(-50%, -50%);
   font-size: 1em;
   padding: 7px 20px;
-  box-shadow: 10px 5px 5px black;
+  background-color: #ffd543;
+  border: #2c1e1e solid 2px;
+  box-shadow: 10px 5px 5px #2c1e1e;
 }
 .boutonText {
   text-decoration: none;
-  color: black;
+  color: #2c1e1e;
 }
 h1,
 h2,

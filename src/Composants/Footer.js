@@ -15,9 +15,9 @@ export default function Footer() {
         <p className="inline">Horaires : 9h00-17h00 du Lundi au Vendredi</p>
       </div>
       <div className="logoReseaux">
-        <img src="/images/facebook.png" alt="Logo Facebook"></img>
-        <img src="/images/instagram.png" alt="Logo Instagram"></img>
-        <img src="/images/twitter.png" alt="Logo Twitter"></img>
+        <img src="/images/facebook.png" alt="Logo Facebook" />
+        <img src="/images/instagram.png" alt="Logo Instagram" />
+        <img src="/images/twitter.png" alt="Logo Twitter" />
       </div>
     </div>
   );

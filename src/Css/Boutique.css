@@ -27,3 +27,6 @@
 .siOuvert :last-child {
   padding-bottom: 20px;
 }
+input[type="checkbox"] {
+  accent-color: #ffd543;
+}

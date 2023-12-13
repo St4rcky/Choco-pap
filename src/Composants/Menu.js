@@ -4,7 +4,6 @@ import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import { useState } from "react";
 import Offcanvas from "react-bootstrap/Offcanvas";
-import CloseButton from "react-bootstrap/esm/CloseButton";
 import Panier from "./Panier";
 import { PanierContext } from "./PanierContext";
 import { useContext } from "react";
@@ -44,17 +43,17 @@ export default function Menu() {
           </div>
 
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
-          <Navbar.Collapse className="poupette" id="basic-navbar-nav">
+          <Navbar.Collapse className="navBarOpen" id="basic-navbar-nav">
             <Nav className="me-auto poups">
-              <NavLink to="" className="test">
+              <NavLink to="" className="menuNav">
                 Accueil
               </NavLink>
-              <NavLink to="/shop" className="test">
+              <NavLink to="/shop" className="menuNav">
                 Boutique
               </NavLink>
 
               <p>
-                <span onClick={handleShow} className="panier visible test">
+                <span onClick={handleShow} className="panier visible menuNav">
                   Panier
                 </span>
                 <span className="panier" onClick={handleShow}>

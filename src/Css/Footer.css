@@ -3,7 +3,8 @@
   color: #1f1615;
   display: grid;
   grid-template-columns: 1fr 1.5fr 1fr;
-  margin-top: 40px;
+  border: solid 3px #2c1e1e;
+  border-top: none;
 }
 .footer h2 {
   font-weight: bold;
@@ -24,6 +25,8 @@
 .logoReseaux img {
   padding: 20px;
   transform: translateY(-20px);
+  width: 100px;
+  height: auto;
 }
 @media screen and (max-width: 700px) {
   .footer {

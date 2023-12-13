@@ -18,7 +18,7 @@ export default function Accueil() {
       <h1 className="choco">CHOCO PAP</h1>
       <button className="boutonPrincipal">
         <NavLink className="boutonText" to="/shop">
-          VOIR LA BOUTIQUE
+          Voir la boutique
         </NavLink>
       </button>
     </div>
