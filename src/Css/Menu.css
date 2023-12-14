@@ -1,7 +1,6 @@
 .header {
   background-color: #ffd543;
   border: solid 3px #2c1e1e;
-  border-bottom: none;
 }
 .menu {
   padding: 0 !important;
@@ -33,6 +32,7 @@ a {
   margin-bottom: 10px;
   color: black;
   text-decoration: underline;
+  padding-left: 5px;
 }
 .offcanvas-custom-width {
   width: 100% !important;
@@ -74,6 +74,10 @@ a {
   .visible {
     display: none;
   }
+  #basic-navbar-nav {
+    border: none;
+    background-color: rgb(255, 213, 67);
+  }
 }
 @media screen and (min-width: 576px) {
   .menuNav {
@@ -85,10 +89,24 @@ a {
     width: 50% !important;
   }
 }
+@media screen and (min-width: 1600px) {
+  .container {
+    max-width: 90% !important;
+  }
+}
 .navBarOpen {
-  padding-top: 10px;
-  border: solid 3px red;
-  width: 100%;
-  background-color: red;
-  margin: 0 -15px;
+  border: solid 3px #2c1e1e;
+  border-left: none;
+  border-right: none;
+  background-color: #55c0cf;
+  margin: 10px -21px;
+}
+#basic-navbar-nav {
+  margin-bottom: -20px;
+}
+.navbar-toggler {
+  border: none !important;
+}
+.custom-toggler:focus {
+  box-shadow: none !important;
 }

@@ -42,9 +42,12 @@ export default function Menu() {
             </Navbar.Brand>
           </div>
 
-          <Navbar.Toggle aria-controls="basic-navbar-nav" />
+          <Navbar.Toggle
+            aria-controls="basic-navbar-nav"
+            className="custom-toggler"
+          />
           <Navbar.Collapse className="navBarOpen" id="basic-navbar-nav">
-            <Nav className="me-auto poups">
+            <Nav className="me-auto">
               <NavLink to="" className="menuNav">
                 Accueil
               </NavLink>

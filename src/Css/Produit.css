@@ -9,8 +9,14 @@
   margin: 0;
 }
 .descProduit h4,
-.descProduit p,
-.descProduit button {
+.descProduit p {
   margin: 0;
   font-weight: 600;
+}
+.boutonAjouter {
+  background-color: rgb(255, 213, 67);
+  box-shadow: 3px 3px 3px #2c1e1e;
+  border: #2c1e1e solid 3px;
+  font-weight: 600;
+  margin-top: 5px;
 }

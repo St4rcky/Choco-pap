@@ -19,14 +19,44 @@
   text-decoration: underline;
   padding: 10px 0;
 }
-.shadow {
-  border: 3px solid black;
-  box-shadow: 3px 3px 3px rgb(0, 0, 0);
-  background-color: white;
-}
 .siOuvert :last-child {
   padding-bottom: 20px;
 }
 input[type="checkbox"] {
   accent-color: #ffd543;
+}
+label {
+  font-weight: 600;
+}
+.prixMin {
+  max-width: 55px;
+  margin: 0 0 10px 15px;
+  height: 25px;
+  border: 2px solid #2c1e1e;
+  border-radius: 3px;
+}
+.prixMax:focus,
+.prixMin:focus {
+  outline: solid 2px #55c0cf;
+}
+.prixMax {
+  max-width: 55px;
+  margin-left: 13px;
+  height: 25px;
+  border: 2px solid #2c1e1e;
+  border-radius: 3px;
+}
+#noteMin {
+  max-width: 45px;
+  margin: 0 0 10px 10px;
+  border: 2px solid #2c1e1e;
+  border-radius: 3px;
+  background-color: white;
+}
+#noteMax {
+  max-width: 45px;
+  border: 2px solid #2c1e1e;
+  border-radius: 3px;
+  margin: 0 0 0 8px;
+  background-color: white;
 }

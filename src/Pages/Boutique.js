@@ -166,8 +166,9 @@ export default function Boutique() {
                 id="prixMin"
                 name="prixMin"
                 min="1"
-                max="100"
+                max="99"
                 placeholder="1€"
+                className="prixMin"
               />
               <br />
               <label htmlFor="prixMax">Prix max</label>
@@ -177,8 +178,9 @@ export default function Boutique() {
                 id="prixMax"
                 name="prixMax"
                 min="1"
-                max="100"
-                placeholder="100€"
+                max="99"
+                placeholder="99€"
+                className="prixMax"
               />
               <br />
             </form>

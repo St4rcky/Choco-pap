@@ -36,7 +36,7 @@ export default function Produit(props) {
         <h4>{produitNom}</h4>
         <p>{prix} €</p>
         <p>Note: {rating}</p>
-        <button className="shadow" onClick={handleAdd}>
+        <button className="boutonAjouter" onClick={handleAdd}>
           Ajouter au panier
         </button>
       </div>

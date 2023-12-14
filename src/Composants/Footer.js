@@ -16,7 +16,7 @@ export default function Footer() {
       </div>
       <div className="logoReseaux">
         <img src="/images/facebook.png" alt="Logo Facebook" />
-        <img src="/images/instagram.png" alt="Logo Instagram" />
+        <img src="/images/aze.png" alt="Logo Instagram" />
         <img src="/images/twitter.png" alt="Logo Twitter" />
       </div>
     </div>
