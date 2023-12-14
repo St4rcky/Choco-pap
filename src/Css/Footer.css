@@ -4,7 +4,6 @@
   display: grid;
   grid-template-columns: 1fr 1.5fr 1fr;
   border: solid 3px #2c1e1e;
-  border-top: none;
 }
 .footer h2 {
   font-weight: bold;

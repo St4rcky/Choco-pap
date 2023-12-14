@@ -224,9 +224,9 @@ export default function Boutique() {
         </Col>
         <Col>
           <Row>
-            {filtreProduits(produits).map((produit) => (
+            {filtreProduits(produits).map((produit, index, array) => (
               <Col key={produit.id} xs={12} sm={6} md={4} xl={3}>
-                <Produit info={produit} />
+                <Produit info={produit} isLast={index === array.length - 1} />
               </Col>
             ))}
           </Row>
