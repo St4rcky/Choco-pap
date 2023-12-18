@@ -78,7 +78,10 @@ export default function Description() {
               />
             </Col>
             <Col md={8}>
-              <button className="boutonDesc" onClick={handleAjouterAuPanier}>
+              <button
+                className="boutonAjouter boutonDesc"
+                onClick={handleAjouterAuPanier}
+              >
                 AJOUTER AU PANIER
               </button>
             </Col>

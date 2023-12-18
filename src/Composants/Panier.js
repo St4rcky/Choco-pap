@@ -23,12 +23,21 @@ export default function Panier(props) {
   };
 
   return (
-    <div className="testpanier">
-      <button onClick={() => props.panierDelete(id)}>&times;</button>
-      <img src={produitImage} alt="produit" />
-      <p>{produitNom}</p>
-      <p>{prix} €</p>
-      <input type="number" value={quantite} onChange={handleQuantiteChange} />
+    <div className="stylePanier">
+      <p className="redButton" onClick={() => props.panierDelete(id)}>
+        &times;
+      </p>
+      <img className="imgPanier" src={produitImage} alt="produit" />
+      <div className="descPanier">
+        <p>{produitNom}</p>
+        <p>{prix} €</p>
+        <input
+          className="inputPanier"
+          type="number"
+          value={quantite}
+          onChange={handleQuantiteChange}
+        />
+      </div>
     </div>
   );
 }

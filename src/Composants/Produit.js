@@ -28,7 +28,7 @@ export default function Produit(props) {
   };
 
   return (
-    <div className={props.isLast ? "dernierProduit" : ""}>
+    <div>
       <Link to={`/product/${produitNom}`}>
         <img className="produit" src={produitImage} alt="produit2"></img>
       </Link>

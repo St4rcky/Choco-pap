@@ -9,6 +9,9 @@ input[type="number"] {
 }
 .img-xl {
   display: none;
+  margin-top: 50px;
+  min-width: 350px;
+  max-width: 500px;
 }
 .titreDesc {
   padding: 35px 0 0 10px;
@@ -31,7 +34,6 @@ input[type="number"] {
 .boutonDesc {
   width: 80%;
   margin-left: 5px;
-  box-shadow: 5px 5px #2c1e1e;
 }
 .img-xs {
   padding-top: 30px;

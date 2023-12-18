@@ -87,16 +87,22 @@ export default function Menu() {
           <Offcanvas.Title className="offcanvasTitre">PANIER</Offcanvas.Title>
         </Offcanvas.Header>
         <Offcanvas.Body>
-          {itemPanier.map((produit) => (
-            <Panier
-              key={produit.id}
-              data={produit}
-              panierDelete={handleDelete}
-            />
-          ))}
-          <p>TOTAL : {prixTotal} €</p>
-          <button onClick={handleResetPanier}>REINITIALISER LE PANIER</button>
-          <button className="shadow">VALIDER LE PANIER</button>
+          <div className="hautPanier">
+            {itemPanier.map((produit) => (
+              <Panier
+                key={produit.id}
+                data={produit}
+                panierDelete={handleDelete}
+              />
+            ))}
+          </div>
+          <div className="basPanier">
+            <p className="totalPanier">TOTAL : {prixTotal} €</p>
+            <button className="btnPanier" onClick={handleResetPanier}>
+              REINITIALISER LE PANIER
+            </button>
+            <button className="btnPanier">VALIDER LE PANIER</button>
+          </div>
         </Offcanvas.Body>
       </Offcanvas>
     </>

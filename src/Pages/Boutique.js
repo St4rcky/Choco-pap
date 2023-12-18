@@ -115,7 +115,7 @@ export default function Boutique() {
       <h1 className="boutique">BOUTIQUE</h1>
       <Row>
         <Col xs={12} sm={6} md={4} lg={3}>
-          <section>
+          <section className="filtreSection">
             <h2 className="titreFiltre">FILTRE</h2>
             <h3 className="filtreTexte">
               Catégories{" "}
@@ -226,7 +226,7 @@ export default function Boutique() {
           <Row>
             {filtreProduits(produits).map((produit, index, array) => (
               <Col key={produit.id} xs={12} sm={6} md={4} xl={3}>
-                <Produit info={produit} isLast={index === array.length - 1} />
+                <Produit info={produit} />
               </Col>
             ))}
           </Row>

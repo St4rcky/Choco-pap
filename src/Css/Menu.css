@@ -40,8 +40,10 @@ a {
 .offcanvasHeader {
   display: flex;
   flex-direction: column;
+  background-color: #55c0cf;
+  border: #2c1e1e solid 2px;
+  border-bottom: none;
 }
-
 .offcanvasCloseButton {
   padding: 0;
   margin: 0;
@@ -109,4 +111,37 @@ a {
 }
 .custom-toggler:focus {
   box-shadow: none !important;
+}
+.hautPanier {
+  background-color: #b65f28;
+  border: #2c1e1e solid 2px;
+  max-height: 60%;
+  overflow: auto;
+}
+.offcanvas-body {
+  width: 100%; /* Ajustez cette ligne */
+  padding: 0 !important; /* Ajustez selon vos besoins */
+  background-color: #55c0cf;
+}
+.basPanier {
+  text-align: center;
+}
+.totalPanier {
+  padding-top: 20px;
+  font-size: 1.5em;
+}
+.btnPanier {
+  font-size: 1.2em;
+  background-color: rgb(255, 213, 67);
+  box-shadow: 3px 3px 3px #2c1e1e;
+  border: #2c1e1e solid 3px;
+  display: block;
+  margin: 30px auto;
+  width: 70%;
+  height: 50px;
+  transition: background-color 0.3s, box-shadow 0.3s;
+}
+.btnPanier:active {
+  background-color: #ffcc00;
+  box-shadow: none;
 }
