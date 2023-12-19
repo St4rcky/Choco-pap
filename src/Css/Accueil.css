@@ -44,7 +44,7 @@ h4 {
   .choco {
     font-size: 3em;
   }
-  .boutonText {
+  .boutonPrincipal {
     text-transform: uppercase;
   }
 }
@@ -68,10 +68,12 @@ h4 {
   background-color: #ffd543;
   border: #2c1e1e solid 2px;
   box-shadow: 10px 5px 5px #2c1e1e;
-}
-.boutonText {
   text-decoration: none;
   color: #2c1e1e;
+}
+.boutonPrincipal:active {
+  background-color: #ffcc00;
+  box-shadow: none;
 }
 h1,
 h2,

@@ -16,11 +16,9 @@ export default function Accueil() {
         </Carousel.Item>
       </Carousel>
       <h1 className="choco">CHOCO PAP</h1>
-      <button className="boutonPrincipal">
-        <NavLink className="boutonText" to="/shop">
-          Voir la boutique
-        </NavLink>
-      </button>
+      <NavLink to="/shop">
+        <button className="boutonPrincipal">Voir la boutique</button>
+      </NavLink>
     </div>
   );
 }

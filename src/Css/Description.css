@@ -51,4 +51,8 @@ input[type="number"] {
   .img-xs {
     display: none;
   }
+  .teste {
+    max-width: 1360px !important;
+    margin: auto !important;
+  }
 }

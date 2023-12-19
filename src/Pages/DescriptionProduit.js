@@ -49,15 +49,15 @@ export default function Description() {
 
   return (
     <Container>
-      <Row>
-        <Col xs={12} md={6} lg={{ span: 3, offset: 1 }}>
+      <Row className="teste">
+        <Col xs={12} md={6} lg={6}>
           <img
             className="img-xl"
             src={produit.produitImage}
             alt={produit.produitNom}
           />
         </Col>
-        <Col xs={12} md={6} lg={{ span: 4, offset: 2 }}>
+        <Col xs={12} md={6} lg={{ span: 4, offset: 1 }}>
           <h1 className="titreDesc">{produit.produitNom}</h1>
           <p className="prixDesc">{produit.prix} €</p>
           <p className="textDesc">
@@ -93,7 +93,7 @@ export default function Description() {
           alt={produit.produitNom}
         />
       </Row>
-      <div>
+      <div className="teste">
         <h2 className="ingredient">Ingrédients</h2>
         <p className="textDesc textIngredient">
           Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quas

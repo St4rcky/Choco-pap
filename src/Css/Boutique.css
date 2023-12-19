@@ -57,7 +57,7 @@ label {
   max-width: 45px;
   border: 2px solid #2c1e1e;
   border-radius: 3px;
-  margin: 0 0 0 8px;
+  margin: 0 0 15px 8px;
   background-color: white;
 }
 @media (min-width: 576px) {
