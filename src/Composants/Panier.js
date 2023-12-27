@@ -2,9 +2,10 @@ import { useContext, useState } from "react";
 import { PanierContext } from "./PanierContext";
 
 export default function Panier(props) {
+  //éviter la répétition de props.data
   const { produitImage, produitNom, prix, id } = props.data;
-  const { itemPanier, setItemPanier } = useContext(PanierContext);
 
+  const { itemPanier, setItemPanier } = useContext(PanierContext);
   const [quantite, setQuantite] = useState(props.data.quantite);
 
   const handleQuantiteChange = (e) => {

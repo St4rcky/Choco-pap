@@ -16,18 +16,22 @@ export default function Menu() {
     (total, produit) => total + produit.quantite,
     0
   );
+  //variables pour Offcanvas
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
+
+  //Fonction bouton supprimer dans panier
   const handleDelete = (id) => {
     const panierCopie = [...itemPanier];
     const updatedPanier = panierCopie.filter((keep) => keep.id !== id);
     setItemPanier(updatedPanier);
   };
 
+  // Réinitialise le panier en le mettant à un tableau vide
   const handleResetPanier = () => {
-    // Réinitialise le panier en le mettant à un tableau vide
     setItemPanier([]);
   };
+
   const prixTotal = itemPanier.reduce((total, produit) => {
     return total + produit.prix * produit.quantite;
   }, 0);
